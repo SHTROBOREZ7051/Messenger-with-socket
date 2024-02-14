@@ -1,7 +1,0 @@
-googletrans==4.0.0rc1
-PyQt5==5.15.9
-json==2.0.9
-re==2.2.1
-pickle
-socket
-cryptography
