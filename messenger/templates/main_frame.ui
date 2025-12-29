@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1062</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>971</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+	border-radius: 10px;
+	background-color: #134e78;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>320</y>
+       <width>191</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	font: 12pt &quot;Sitka Small&quot;;
+    border: none;
+    border-radius: 7px;
+	background-color:  #073759;
+    color: rgb(250, 250, 250);
+}
+QPushButton:hover{
+	background-color: #0a3d61;
+}
+QPushButton:pressed{
+	background-color: #0c5487;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="join_Button">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>130</y>
+       <width>191</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	font: 12pt &quot;Sitka Small&quot;;
+    border: none;
+    border-radius: 7px;
+	background-color:  #073759;
+    color: rgb(250, 250, 250);
+}
+QPushButton:hover{
+	background-color: #0a3d61;
+}
+QPushButton:pressed{
+	background-color: #0c5487;
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Присоединиться</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="clear_chat">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>225</y>
+       <width>191</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	font: 12pt &quot;Sitka Small&quot;;
+    border: none;
+    border-radius: 7px;
+	background-color:  #073759;
+    color: rgb(250, 250, 250);
+}
+QPushButton:hover{
+	background-color: #0a3d61;
+}
+QPushButton:pressed{
+	background-color: #0c5487;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Очистить чат</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="make_group_Button">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>35</y>
+       <width>191</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	font: 12pt &quot;Sitka Small&quot;;
+    border: none;
+    border-radius: 7px;
+	background-color:  #073759;
+    color: rgb(250, 250, 250);
+}
+QPushButton:hover{
+	background-color: #0a3d61;
+}
+QPushButton:pressed{
+	background-color: #0c5487;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Создать группу</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>510</y>
+       <width>691</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	border-radius: 10px;
+	background-color: #fff;
+    font: 12pt &quot;Sitka Small&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>35</y>
+       <width>766</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame{
+	border-radius: 7px;
+	background-color: #073759;
+}
+QListWidget {
+	font: 12pt &quot;Sitka Small&quot;;
+    border: none;
+    border-radius: 8px;
+	background-color:  #073759;
+    color: rgb(250, 250, 250);
+}</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="send_message">
+     <property name="geometry">
+      <rect>
+       <x>895</x>
+       <y>510</y>
+       <width>71</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: none;
+     border-radius: 10px;
+    background-color:  #073759;
+}
+QPushButton:hover{
+	background-color: #0a3d61;
+}
+QPushButton:pressed{
+	background-color: #0c5487;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>0</y>
+       <width>991</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame{
+	background-color:  #073252;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="close_window">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>3</y>
+        <width>31</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:hover{
+	background-color: #0a3d61;
+}
+QPushButton{
+    border:none
+}
+QPushButton:pressed{
+	background-color: #0c5487;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="minimize_window">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>3</y>
+        <width>31</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: none;
+}
+QPushButton:hover{
+	background-color: #0a3d61;
+}
+QPushButton:pressed{
+	background-color: #0c5487;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>405</y>
+       <width>191</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	font: 12pt &quot;Sitka Small&quot;;
+    border: none;
+    border-radius: 7px;
+	background-color:  #073759;
+    color: rgb(250, 250, 250);
+}
+QPushButton:hover{
+	background-color: #0a3d61;
+}
+QPushButton:pressed{
+	background-color: #0c5487;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="notification_Label">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>40</y>
+       <width>531</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	border-radius: 15px;
+    background-color:  #073759;
+    font: 14pt &quot;Sitka Small&quot;;
+    color: rgb(200, 0, 0);
+    opacity: 1;
+    transition: opacity 2s ease;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1062</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
